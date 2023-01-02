@@ -116,7 +116,7 @@ export default class About extends Component {
                 </div>
                 <div className="col-xl-2 col-lg-2 col-md-3">
                   <a href="#" className="btn btn-black f-right">
-                    Contact Me Now
+                  <Link to="/contact">Contact Me Now</Link>
                   </a>
                 </div>
               </div>

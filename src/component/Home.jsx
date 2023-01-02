@@ -1,4 +1,11 @@
 import React, { Component } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Routes,
+} from "react-router-dom";
 
 export default class Home extends Component {
   render() {
@@ -23,12 +30,11 @@ export default class Home extends Component {
                         {/* Hero-btn */}
                         <div className="hero__btn">
                           <a
-                            href="industries.html"
                             className="btn hero-btn"
                             data-animation="fadeInLeft"
                             data-delay=".8s"
                           >
-                            Learn More
+                            <Link to="/about">Learn More</Link>
                           </a>
                           <a
                             href="industries.html"
@@ -36,7 +42,7 @@ export default class Home extends Component {
                             data-animation="fadeInRight"
                             data-delay="1.0s"
                           >
-                            Hire Me
+                            <Link to="/contact">Hire Me</Link>
                           </a>
                         </div>
                       </div>
@@ -606,7 +612,7 @@ export default class Home extends Component {
                 </div>
                 <div className="col-xl-2 col-lg-2 col-md-3">
                   <a href="#" className="btn btn-black f-right">
-                    Contact Me Now
+                  <Link to="/contact">Contact Me Now</Link>
                   </a>
                 </div>
               </div>
@@ -631,71 +637,71 @@ export default class Home extends Component {
               <div className="container">
                 <div className="row">
                   {/* <div className="blog-active"> */}
-                    {/* single-items */}
-                    <div className="col-xl-4">
-                      <div className="blog-wrapper">
-                        <div className="blog-inner">
-                          <div className="blog-top">
-                            <div className="person-img">
-                              <img src="assets/img/gallery/blog1.png" alt="" />
-                            </div>
-                            <div className="comment-person">
-                              <h2>Bradley Erickson</h2>
-                              <span>UI/UX Designer</span>
-                            </div>
+                  {/* single-items */}
+                  <div className="col-xl-4">
+                    <div className="blog-wrapper">
+                      <div className="blog-inner">
+                        <div className="blog-top">
+                          <div className="person-img">
+                            <img src="assets/img/gallery/blog1.png" alt="" />
                           </div>
-                          <p>
-                            Consectetur adipisicing elit, seddosdoe eiusmod
-                            tempor incididunt utore etstes dolore magna aliqua.
-                            Ut imminim restai veniam, quis nostrud.
-                          </p>
+                          <div className="comment-person">
+                            <h2>Bradley Erickson</h2>
+                            <span>UI/UX Designer</span>
+                          </div>
                         </div>
+                        <p>
+                          Consectetur adipisicing elit, seddosdoe eiusmod tempor
+                          incididunt utore etstes dolore magna aliqua. Ut
+                          imminim restai veniam, quis nostrud.
+                        </p>
                       </div>
                     </div>
-                    {/* single-items */}
-                    <div className="col-xl-4">
-                      <div className="blog-wrapper">
-                        <div className="blog-inner">
-                          <div className="blog-top">
-                            <div className="person-img">
-                              <img src="assets/img/gallery/blog2.png" alt="" />
-                            </div>
-                            <div className="comment-person">
-                              <h2>Bradley Erickson</h2>
-                              <span>UI/UX Designer</span>
-                            </div>
+                  </div>
+                  {/* single-items */}
+                  <div className="col-xl-4">
+                    <div className="blog-wrapper">
+                      <div className="blog-inner">
+                        <div className="blog-top">
+                          <div className="person-img">
+                            <img src="assets/img/gallery/blog2.png" alt="" />
                           </div>
-                          <p>
-                            Consectetur adipisicing elit, seddosdoe eiusmod
-                            tempor incididunt utore etstes dolore magna aliqua.
-                            Ut imminim restai veniam, quis nostrud.
-                          </p>
+                          <div className="comment-person">
+                            <h2>Bradley Erickson</h2>
+                            <span>UI/UX Designer</span>
+                          </div>
                         </div>
+                        <p>
+                          Consectetur adipisicing elit, seddosdoe eiusmod tempor
+                          incididunt utore etstes dolore magna aliqua. Ut
+                          imminim restai veniam, quis nostrud.
+                        </p>
                       </div>
                     </div>
-                    {/* single-items */}
-                    <div className="col-xl-4">
-                      <div className="blog-wrapper">
-                        <div className="blog-inner">
-                          <div className="blog-top">
-                            <div className="person-img">
-                              <img src="assets/img/gallery/blog3.png" alt="" />
-                            </div>
-                            <div className="comment-person">
-                              <h2>Bradley Erickson</h2>
-                              <span>UI/UX Designer</span>
-                            </div>
+                  </div>
+                  {/* single-items */}
+                  <div className="col-xl-4">
+                    <div className="blog-wrapper">
+                      <div className="blog-inner">
+                        <div className="blog-top">
+                          <div className="person-img">
+                            <img src="assets/img/gallery/blog3.png" alt="" />
                           </div>
-                          <p>
-                            Consectetur adipisicing elit, seddosdoe eiusmod
-                            tempor incididunt utore etstes dolore magna aliqua.
-                            Ut imminim restai veniam, quis nostrud.
-                          </p>
+                          <div className="comment-person">
+                            <h2>Bradley Erickson</h2>
+                            <span>UI/UX Designer</span>
+                          </div>
                         </div>
+                        <p>
+                          Consectetur adipisicing elit, seddosdoe eiusmod tempor
+                          incididunt utore etstes dolore magna aliqua. Ut
+                          imminim restai veniam, quis nostrud.
+                        </p>
                       </div>
                     </div>
-                    {/* single-items */}
-                   
+                  </div>
+                  {/* single-items */}
+
                   {/* </div> */}
                 </div>
               </div>
